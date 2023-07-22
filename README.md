@@ -2,7 +2,7 @@ for get
 
 CRUD
 <br>
-C = create 
-R =  read
-u = update
-D = delete
+C = create //POST
+R =  read  //GET
+u = update //PUT
+D = delete //DELETE
