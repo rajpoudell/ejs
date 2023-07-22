@@ -12,11 +12,6 @@ app.get("/about",(req,res)=>{
     res.send("<h1>Hello about page</h1>")
 });
 
-app.get("/service",(req,res)=>{
-    
-    res.send("<h1>Hello service page</h1>")
-});
-
 
 app.listen(port ,() =>{
     console.log(`Server is Working on port: ${port}`);
