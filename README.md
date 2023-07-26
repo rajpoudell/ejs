@@ -27,3 +27,5 @@ app.post("/api/user/login",(req,res)=>{
 ```
 * Here with url `/api/user/login`
 - we get respone with page with element `hello world`
+
+* REST (Representational state transfer) is an API that defines a set of functions that programmers can use to send requests and receive responses using the HTTP protocol methods such as GET and POST.

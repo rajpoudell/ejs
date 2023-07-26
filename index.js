@@ -8,14 +8,9 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.get("/",(req,res) => {
     res.sendFile(path.join(__dirname,"index.html"));
     console.log(path.join(__dirname,"index.js"))
-
 });
-app.post("/api/v1/register",(req,res) => {
-    res.send(`<h1>Done Mr.${req.body.name}</h1> <h2>your email is ${req.body.email}</h2> <h3>password: ${req.body.password}</h3>`)
-    
-    console.log(req.body.name);
 
-})
+
 
 app.listen(port ,() =>{
     console.log(`Server is running on http://localhost:${port}`)
