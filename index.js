@@ -5,11 +5,23 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 4000;
 app.use(bodyParser.urlencoded({extended:false}));
-app.get("/",(req,res) => {
-    res.sendFile(path.join(__dirname,"index.html"));
-    console.log(path.join(__dirname,"index.js"))
+
+
+app.get("/api/v1/userdata",(req,res) => {
+    res.json({
+        name:"raj",
+        email:"sample@gmail.com",
+        password:"hexed",
+    });
 });
 
+app.post("/api/v1/register",(req,res) =>{
+
+
+    res.json({
+        success:true,
+    })
+})
 
 
 app.listen(port ,() =>{
