@@ -19,7 +19,7 @@ app.post("/api/v1/register",(req,res) =>{
 
 
     res.json({
-        success:true,
+        success:true
     })
 })
 
